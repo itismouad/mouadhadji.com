@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>{% block title %}itismouad {% endblock %}</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon/favicon.ico') }}">
+    <link rel="icon" sizes="16x16 32x32 64x64" href="{{ url_for('static', filename='favicon/favicon.ico') }}">
+    <link rel="icon" type="image/png" sizes="196x196" href="{{ url_for('static', filename='favicon/favicon-192.png') }}">
+    <link rel="icon" type="image/png" sizes="160x160" href="{{ url_for('static', filename='favicon/favicon-160.png') }}">
+    <link rel="icon" type="image/png" sizes="96x96" href="{{ url_for('static', filename='favicon/favicon-96.png') }}">
+    <link rel="icon" type="image/png" sizes="64x64" href="{{ url_for('static', filename='favicon/favicon-64.png') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename='favicon/favicon-32.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='favicon/favicon-16.png') }}">
+    <link rel="apple-touch-icon" href="{{ url_for('static', filename='favicon/favicon-57.png') }}">
+    <link rel="apple-touch-icon" sizes="114x114" href="{{ url_for('static', filename='favicon/favicon-114.png') }}">
+    <link rel="apple-touch-icon" sizes="72x72" href="{{ url_for('static', filename='favicon/favicon-72.png') }}">
+    <link rel="apple-touch-icon" sizes="144x144" href="{{ url_for('static', filename='favicon/favicon-144.png') }}">
+    <link rel="apple-touch-icon" sizes="60x60" href="{{ url_for('static', filename='favicon/favicon-60.png') }}">
+    <link rel="apple-touch-icon" sizes="120x120" href="{{ url_for('static', filename='favicon/favicon-120.png') }}">
+    <link rel="apple-touch-icon" sizes="76x76" href="{{ url_for('static', filename='favicon/favicon-76.png') }}">
+    <link rel="apple-touch-icon" sizes="152x152" href="{{ url_for('static', filename='favicon/favicon-152.png') }}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='favicon/favicon-180.png') }}">
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <meta name="msapplication-TileImage" content="{{ url_for('static', filename='favicon/favicon-144.png') }}">
+    <meta name="msapplication-config" content="{{ url_for('static', filename='favicon/browserconfigxml') }}">
+
+
+    <!-- CSS -->
+    <link rel="stylesheet" type=text/css href="{{ url_for('static', filename='simplegrid.css') }}">
+    <link rel="stylesheet" type=text/css href="{{ url_for('static', filename='customStyle.css') }}">
+    <link rel="stylesheet" type=text/css href="{{ url_for('static', filename='sunburst.css') }}">
+
+    <!-- Link to Emoji CSS -->
+    <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+
+    <!-- Link to Font Awesome -->
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+
+    <script src="{{url_for('static', filename='js/prettify.js') }}"></script>
+    <!-- JQUERY -->
+    <script src="http://code.jquery.com/jquery.js"></script>
+
+    <!-- Meta Description tags -->
+    <meta name="keywords" content="Mouad Hadji, mouad hadji, mouad, hadji, personal, blog" />
+
+    {% block extra_scripts %}
+    {% endblock %}
+</head>
+
+<body onload="prettyPrint()">
+<div id="page-wrap">
+    <div id="header">
+        <a class="home" href="/">Mouad Hadji</a>
+        <span class="header-links">
+            <a href="/blog">| blog</a>
+            <a href="/projects">| projects</a>
+            <a href="/about">| about</a>
+        </span>
+    </div>
+{% block badass_content %}
+{% endblock %}
+</div>
+
+
+  <footer id="foot">
+<!--    <p> Made by <a href="http://twitter.com/itismouad"> @itismouad </a> <br> -->
+  </footer>
+
+
+{% block scripts %}
+{% endblock %}
+</body>
+</html>
