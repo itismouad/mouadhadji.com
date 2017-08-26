@@ -13,7 +13,7 @@ html, body {
 body h1 {
   font-size: 5em;
   font-weight: bold;
-  color: #16a085;
+  color: #2f71b5;
   line-height: 70px;
   padding-bottom: 20px; }
 body h2 {
@@ -43,7 +43,7 @@ body ul {
   margin-top: 15px;
   margin-bottom: 15px; }
 body a {
-  color: #16a085;
+  color: #2f71b5;
   text-decoration: none;
   font-weight: bold; }
 body a:hover {
@@ -56,7 +56,7 @@ body .quote {
   margin-left: 40px;
   margin-right: 20px;
   padding-left: 60px;
-  border-left: 10px solid #16a085;
+  border-left: 10px solid #2f71b5;
   opacity: 0.8;
   font-style: italic;
   font-size: 1.5em; }
@@ -197,7 +197,7 @@ iframe {
     margin-left: 40px;
     margin-right: 20px;
     padding-left: 20px;
-    border-left: 10px solid #16a085;
+    border-left: 10px solid #2f71b5;
     font-size: 1.1em; }
   body ul {
     font-size: 1.2em;
