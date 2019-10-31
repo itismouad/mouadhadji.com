@@ -3,51 +3,53 @@
 {% block badass_content %}
 
 <h1>about</h1>
-<img id="my-picture" src="{{ url_for('static', filename='img/me_light.png') }}" />
-</br></br></br></br>
-<p>I'm <b>Mouad</b>, a French Engineer from Paris, passionate about artificial intelligence, arts and soccer.
-<p><br></br>
-My strong background in math coupled with my passion for data/quantitative analysis have naturally pushed me to thrive in the data science field. I currently work at Tesla, where I lead all data science efforts related to product reliability and enjoy enabling data-driven decision making in complex business contexts.
 
-<p><br>
-My interests are various but mainly focused around two areas :
+<!-- INTRO DETAILS -->
+<!-- <img id="my-picture" src="{{ url_for('static', filename='img/me_light.png') }}"/> -->
+
+<br>
+<p>I am a French Engineer who is now living in the US. Among many things, I am very passionate about decision and social sciences, especially their applications in topics such as mobility, new energies or healthcare.</p>
+<br>
+<p>My passion for data and quantitative analysis have naturally pushed me to thrive in the data science field. I currently work at Tesla, where I lead data science efforts related to product reliability and enjoy enabling data-driven decision making in complex business contexts.</p>
+<br>
+
+<!-- AREAS DETAILS -->
+<h2>Areas of Expertise</h2>
+<p>My areas of expertise are mainly focused around two areas :</p>
 <ul>
-  <li><b>Data Science</b>: Artificial Intelligence (ML, NLP, CV, RL, etc.), Data culture and democratization</li>
+  <li><b>Data Science</b>: Artificial Intelligence (ML, NLP, CV, etc.), Data culture and democratization</li>
   <li><b>Economics and Finance</b>: Business Strategy, Investment Research, Financial Modeling</li>
 </ul>
-</p>
-<p>
-They have in common the need for a deep understanding of the data but also for the ability to take a step back and understand the "real" world. I started to populate my github with personal projects. The current ones (and upcoming) will deal with a variety of topics including natural language processing, computer vision, financial modeling, etc.
+<p>They have in common the need for a deep understanding of the data but also for the ability to take a step back and understand the real world. I started to populate my github with personal projects. The current ones (and upcoming) will deal with a variety of topics including natural language processing, computer vision, financial modeling, etc.</p>
+<br>
 
-</br><br>
+<!-- SKILLS DETAILS -->
 <h2>Background</h2>
+<p>I graduated from MINES ParisTech (the "French MIT") in 2015 where I went through a heavy training in Applied Mathematics and Economics. I also followed two courses at Stanford with the rise of deep learning applications (CS224n, CS231n).</p>
+<br>
+<p>I have work experiences in investment banking and the tech industry, all focused on data analysis and decision-making. I have experience working with very large data sets and collaborating with both engineering teams and PMs/executives.</p>
+<br>
 <p>
-I graduated from MINES ParisTech (the "French MIT") in 2015 where I went through a heavy training in Mathematics, Physics and Economics.
-<p><br>
-I did three internships in total (two in finance, one in tech) all focused on data analysis. I have experience working with very large data sets and collaborating with both engineering teams and product/program managers.
-<p><br>
-You can find <a href="{{ url_for('static', filename='pdf/CV.pdf') }}">here</a> my resume in PDF and my data stack below :
+You can find <a href="{{ url_for('static', filename='pdf/CV.pdf') }}">here</a> my resume in PDF and my stack below :
 <ul>
-  <li>Programming : R, Python (Numpy, Scipy, Pandas, Scikit-Learn, Tensorflow, Keras), VBA, Bash/Unix, Git, etc.</li>
-  <li>Databases : SQL, NoSQL, HDFS, Spark, Impala, Presto, etc.</li>
+  <li>Programming : Python (Numpy, Scipy, Pandas, Scikit-Learn, Tensorflow), R, VBA, Bash/Unix, Git, etc.</li>
+  <li>Databases : SQL, NoSQL, HDFS, Spark, Impala/Presto, etc.</li>
+  <li>DevOps : Ansible, Docker, Nginx, etc.</li>
   <li>Visualization : ggplot2, matplotlib, Tableau, Plotly, Shiny, etc.</li>
   <li>Front-end development: flask, Heroku, HTML/CSS</li>
   <li>Others: MS Office, Latex, Photoshop, Premiere</li>
 </ul>
 </p>
 
-</br>
+<!-- TIME-OFF DETAILS -->
 <h2>Interests</h2>
-<p>
-Amongst too many things, I'm a big fan of cinema and HBO TV shows including The Wire, The Sopranos, Boardwalk Empire, etc. I enjoy discovering arts and never miss an occasion to attend a gallery exhibition thanks to my SFMOMA membership.
-</br></br>
-</p>
-<p>
-I love soccer and practice it a lot when possible. I grew up enjoying the tricks of Jay-Jay Okocha and the vista of Juan-Pablo Sorin at the Parc des Princes for the connoisseurs. I also run half-marathons. 
-</br></br>
-</p>
-<p>
-I try to travel as much as possible. Discovering new cultures, new ways of doing things has helped me a lot professionally but also personally. I enjoy capturing all those moments with my Nikon D5500 camera.
-</br></br>
+<p>A snippet of what I do in my time off :</p>
+<ul>
+  <li>I'm a big fan of cinema and HBO TV shows including The Wire, The Sopranos, Boardwalk Empire, etc. I also enjoy discovering arts and never miss an occasion to attend a gallery exhibition.</li>
+  <li>I love soccer and practice it as much as possible. I coach a team of young kids as part of the <a href="https://www.streetsoccerusa.org/sfba/">Street Soccer USA</a> program -- please consider donating. I also run half-marathons.</li>
+  <li>I try to travel the unknown as much as possible. Discovering new cultures, new ways of doing things has helped me a lot professionally but also personally.</li>
+</ul>
+
+
 
 {% endblock %}
