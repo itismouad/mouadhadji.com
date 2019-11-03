@@ -73,6 +73,10 @@ def about():
 def projects():
     return render_template('projects.html')
 
+@app.route('/reads')
+def reads():
+    return render_template('reads.html')
+
 @app.route('/python')
 def python():
     import sys
